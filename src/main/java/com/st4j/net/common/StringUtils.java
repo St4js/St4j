@@ -4,11 +4,11 @@ package com.st4j.net.common;
 import java.util.Optional;
 
 public class StringUtils {
-	
 
 	public static boolean isEmpty(Object str) {
-	return (str == null || "".equals(str));
-}
+		return (str == null || "".equals(str));
+	}
+
 	/**
 	 * 判断对象是否为空，为空返回true，不为空返回false -->JDK1.7-=
 	 * @date	2015-4-3 下午5:51:35
@@ -21,6 +21,7 @@ public class StringUtils {
 		}
 		return false;
 	}
+
 	/**
 	 * 避免空指针,安全的获取map值,为空返回"",不为空则按照实际值返回. -->JDK1.8+=
 	 * */
