@@ -1,24 +1,24 @@
-package com.st4j.net.reflect; 
+package com.st4j.net.reflect;
 
-import org.junit.Test; 
-import org.junit.Before; 
+import org.junit.Test;
+import org.junit.Before;
 import org.junit.After;
 
 import static org.junit.Assert.assertEquals;
 
-/** 
-* ObjectUtils Tester. 
-* 
-* @author <cja>
-* @since <pre>1, 16, 2019</pre>
-* @version 1.0 
-*/ 
+/**
+ * ObjectUtils Tester.
+ *
+ * @author <cja>
+ * @version 1.0
+ * @since <pre>1, 16, 2019</pre>
+ */
 public class ObjectUtilsTest {
     public Otest otest;
 
-    class Otest{
-        private  String pa;
-        private  String pb;
+    class Otest {
+        private String pa;
+        private String pb;
 
         public void setPa(String pa) {
             this.pa = pa;
@@ -37,27 +37,24 @@ public class ObjectUtilsTest {
         }
     }
 
-@Before
-public void before() throws Exception {
-    otest=new Otest();
-    otest.pa="pa";
-    otest.pb="pb";
-}
+    @Before
+    public void before() throws Exception {
+        otest = new Otest();
+        otest.pa = "pa";
+        otest.pb = "pb";
+    }
 
-@After
-public void after() throws Exception { 
-} 
+    @After
+    public void after() throws Exception {
+    }
 
-/** 
-* 
-* Method: getFieldValueByName(Object o, String fieldName) 
-* 
-*/ 
-@Test
-public void testGetFieldValueByName() throws Exception {
-    String tpa= (String) ObjectUtils.getFieldValueByName(otest,"pa");
-    assertEquals("pa",tpa);
-} 
-
+    /**
+     * Method: getFieldValueByName(Object o, String fieldName)
+     */
+    @Test
+    public void testGetFieldValueByName() throws Exception {
+        String tpa = (String) ObjectUtils.getFieldValueByName(otest, "pa");
+        assertEquals("pa", tpa);
+    }
 
 } 

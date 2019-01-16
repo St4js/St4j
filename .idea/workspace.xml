@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a16d876-fb92-43c4-8f96-e261bf28a62c" name="Default" comment="常用String操作类">
+    <list default="true" id="5a16d876-fb92-43c4-8f96-e261bf28a62c" name="Default" comment="增加反射工具类单元测试">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/st4j/net/reflect/ObjectUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/st4j/net/reflect/ObjectUtilsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/" />
@@ -38,17 +38,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="211" />
+          <entry key="java" value="212" />
           <entry key="md" value="22" />
-          <entry key="txt" value="27" />
+          <entry key="txt" value="42" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="211" />
+          <entry key="JAVA" value="212" />
           <entry key="Markdown" value="22" />
-          <entry key="PLAIN_TEXT" value="27" />
+          <entry key="PLAIN_TEXT" value="42" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
@@ -77,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/st4j/net/reflect/ObjectUtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="717">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#419#420#0" expanded="true" />
                 <element signature="e#455#456#0" expanded="true" />
@@ -234,7 +234,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547621651748" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547621866920" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Project" />
@@ -351,7 +351,7 @@
       <updated>1526449205733</updated>
       <workItem from="1526449208813" duration="1014000" />
       <workItem from="1547616917316" duration="2281000" />
-      <workItem from="1547619684571" duration="1964000" />
+      <workItem from="1547619684571" duration="2182000" />
     </task>
     <task id="LOCAL-00001" summary="添加fastjson依赖">
       <created>1526450107100</created>
@@ -402,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547619224937</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="增加反射工具类单元测试">
+      <created>1547621713348</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1547621713348</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -424,15 +431,18 @@
     <history-entry file="ObjectUtilsTest - 2019.01.16 at 14h 53m 54s.xml">
       <configuration name="ObjectUtilsTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ObjectUtilsTest - 2019.01.16 at 14h 54m 13s.xml">
+      <configuration name="ObjectUtilsTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5259000" />
+    <option name="totallyTimeSpent" value="5477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25479743" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25426438" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -442,8 +452,8 @@
       <window_info anchor="bottom" id="Messages" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" visible="true" weight="0.3991323" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.121475056" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -462,7 +472,7 @@
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25479743" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25479743" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -472,13 +482,13 @@
       <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4989339" visible="true" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4989339" visible="true" weight="0.121475056" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49946696" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -489,7 +499,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +512,8 @@
     <MESSAGE value="添加fastjson依赖" />
     <MESSAGE value="升级阿里json工具包版本" />
     <MESSAGE value="常用String操作类" />
-    <option name="LAST_COMMIT_MESSAGE" value="常用String操作类" />
+    <MESSAGE value="增加反射工具类单元测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加反射工具类单元测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -586,8 +597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/st4j/net/reflect/ObjectUtilsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="717">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="e#419#420#0" expanded="true" />
             <element signature="e#455#456#0" expanded="true" />
