@@ -33,7 +33,7 @@ public class StringUtils {
 	 * 判断对象是否为空，为空返回true，不为空返回false -->JDK1.7
 	 * 
 	 * @date 2019-01-17 10:40
-	 * @param booleab
+	 * @param boolean
 	 * @return
 	 */
 	public static boolean checkParam(Object... obj) {
