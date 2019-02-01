@@ -1,8 +1,5 @@
 package com.st4j.net;
 
-import com.alibaba.fastjson.JSONObject;
-import com.st4j.net.common.StringUtils;
-import com.st4j.net.json.JSONUtils;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -41,8 +38,8 @@ public class CommonTest
      * */
     public void testCommon(){
         String str = null;
-        System.out.println(StringUtils.isNull(str));
-        System.out.println(StringUtils.safeGetValue(str));
+//        System.out.println(StringUtils.isNull(str));
+//        System.out.println(StringUtils.safeGetValue(str));
 
     }
 

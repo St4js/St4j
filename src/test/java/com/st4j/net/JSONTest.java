@@ -1,7 +1,6 @@
 package com.st4j.net;
 
 import com.alibaba.fastjson.JSONObject;
-import com.st4j.net.json.JSONUtils;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -41,11 +40,11 @@ public class JSONTest
     public void testJSON() {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("a","a");
-        System.out.println(JSONUtils.isJSONValid(jsonObject.toJSONString()));
-        System.out.println(JSONUtils.isJSONValid("asdad"));
-        System.out.println(JSONUtils.validateByKeys(jsonObject,"a"));
-        System.out.println(JSONUtils.validateByKeys(jsonObject,new String[]{"a","b"}));
-        System.out.println(JSONUtils.validateByKeysAllNull(jsonObject,new String[]{"a","b"}));
-        System.out.println(JSONUtils.validateByKeysAllNull(jsonObject,"b"));
+//        System.out.println(JSONUtils.isJSONValid(jsonObject.toJSONString()));
+//        System.out.println(JSONUtils.isJSONValid("asdad"));
+//        System.out.println(JSONUtils.validateByKeys(jsonObject,"a"));
+//        System.out.println(JSONUtils.validateByKeys(jsonObject,new String[]{"a","b"}));
+//        System.out.println(JSONUtils.validateByKeysAllNull(jsonObject,new String[]{"a","b"}));
+//        System.out.println(JSONUtils.validateByKeysAllNull(jsonObject,"b"));
     }
 }
